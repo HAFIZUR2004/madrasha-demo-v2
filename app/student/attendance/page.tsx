@@ -3,7 +3,7 @@ import { Calendar as CalendarIcon, CheckCircle, XCircle } from 'lucide-react';
 
 const AttendancePage = () => {
   const daysInMonth = 31;
-  // মক ডাটা: ১-১০ তারিখের হাজিরা
+  // মক ডাটা: ১-১০ তারিখের হাজিরা hazira deya rrljdljldj
   const attendanceRecord: Record<number, string> = {
     1: 'present', 2: 'present', 3: 'absent', 4: 'present', 5: 'present',
     8: 'present', 9: 'absent', 10: 'present'
