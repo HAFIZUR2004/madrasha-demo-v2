@@ -1,7 +1,5 @@
 import mongoose, { Schema, model, models } from "mongoose";
 
-// ;;
-
 const UserSchema = new Schema(
   {
     name: { type: String, required: true },
@@ -19,6 +17,8 @@ const UserSchema = new Schema(
   { timestamps: true }
 );
 
+// Third parameter "registration" explicit collection name হিসেবে কাজ করে
+// mongoose.models.User থাকলে সেটি ব্যবহার করবে, না থাকলে নতুন model তৈরি করবে
 const User = models.User || model("User", UserSchema, "registration");
 
 export default User;
